@@ -25,7 +25,7 @@ def avancada(funcao, d2funcao,x, h):
 def recuada(funcao, d2funcao,x, h):
     dfx = (funcao(x) - funcao(x-h)) / h
 
-    etr = (h / 2) * erro_max(d2funcao, x, x + h)
+    etr = (h / 2) * erro_max(d2funcao, x - h , x)
 
     return dfx, etr
 

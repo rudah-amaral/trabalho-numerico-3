@@ -36,8 +36,9 @@ def main():
     except ExpressaoInvalidaError as e:
         print(f"Erro: {e}")
 
-
-
-
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    try:
+        main()  # o que você já executa hoje
+    except Exception as e:
+        print(f"\nErro: {e}")
+    input("\nPressione Enter para sair...")
